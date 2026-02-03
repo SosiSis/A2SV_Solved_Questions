@@ -1,3 +1,6 @@
+from typing import List
+
+
 class Solution:
     def convertTemperature(self, celsius: float) -> List[float]:
         ans =[]
