@@ -1,7 +1,7 @@
 #User function Template for python3
 from collections import Counter 
 class Solution:
-    #Function to check if a is a subset of b.
+    #Function to check if b is a subset of a.
     def isSubset(self, a, b):
         
         count_a = Counter(a)
