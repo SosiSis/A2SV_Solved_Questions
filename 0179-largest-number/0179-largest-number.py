@@ -12,6 +12,6 @@ class Solution:
         
         strs.sort(key=cmp_to_key(compare))
         
-        result = "".join(strs)
+        result = str(int("".join(strs)))
         
-        return "0" if result[0] == "0" else result
+        return result
