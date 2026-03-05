@@ -11,19 +11,14 @@ class NumMatrix:
                 self.sumMat[r][c] = matrix[r][c] + self.sumMat[r-1][c] + self.sumMat[r][c-1] -self.sumMat[r-1][c-1]
 
     def sumRegion(self, r1: int, c1: int, r2: int, c2: int) -> int:
-        # r1, c1, r2, c2 = r1 + 1, c1 + 1, r2 + 1, c2 + 1
-
-        # bottomRight = self.sumMat[r2][c2]
-        # above = self.sumMat[r1 - 1][c2]
-        # left = self.sumMat[r2][c1 - 1]
-        # topLeft = self.sumMat[r1 - 1][c1 - 1]
+     
         box= self.sumMat[r2][c2]
         left_box=self.sumMat[r2][c1-1]
         up_box=self.sumMat[r1-1][c2]
         overlap = self.sumMat[r1-1][c1-1]
 
 
-        # return bottomRight - above - left + topLeft  
+     
         return box - left_box - up_box + overlap  
 
 
