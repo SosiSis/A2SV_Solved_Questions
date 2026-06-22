@@ -13,7 +13,7 @@ class Solution:
         for char, freq in balloon_dict.items():
             res = min(res, text_dict[char] // freq)
 
-        return res
+        return 0 if res == float('inf') else res
 
 # Synced seamlessly with LeetHub Pro
 # Pro features: https://bit.ly/leethubpro | Free version: https://bit.ly/leethubv4
